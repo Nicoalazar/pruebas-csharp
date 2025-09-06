@@ -28,13 +28,26 @@ namespace ConsoleApp1
                 Console.Write("Elegí una opción: ");
                 opcion = Console.ReadLine();
 
-                if (opcion == "1") Ejercicio1();
-                else if (opcion == "2") Ejercicio2y3();
-                else if (opcion == "4") Ejercicio4();
-                else if (opcion == "5") Ejercicio5();
-                else if (opcion == "6") Ejercicio6();
-                else if (opcion != "0") Console.WriteLine("Opción inválida.");
-                Console.WriteLine();
+                switch(opcion)
+                {
+                    case "1": Ejercicio1();
+                        break;
+                    case "2": Ejercicio2y3();
+                        break;
+                    case "3": Ejercicio2y3();
+                        break;
+                    case "4": Ejercicio4();
+                        break;
+                    case "5": Ejercicio5();
+                        break;
+                    case "6": Ejercicio6();
+                        break;
+                    case "0":
+                        break;
+                    default:
+                        Console.WriteLine("Opción inválida.");
+                        continue;
+                }
             }
         }
         //A2: Escribir en C# para comprender distintas estructuras de control.
